@@ -2,6 +2,8 @@
 
 **Prove you made it first. Find out when it's copied.**
 
+**Live:** [proofhound-production.up.railway.app](https://proofhound-production.up.railway.app) · what the agent is doing right now: [/agent](https://proofhound-production.up.railway.app/agent)
+
 ProofHound is an AI agent that runs on its own [Orbio](https://orbio.so) key. A writer pastes their work; ProofHound fingerprints it, stamps the fingerprint on Base, and the agent watches public feeds for copies. It spends its own Orbio credits only to have Claude judge the few matches that look real.
 
 Built for Orbio Build Week.
