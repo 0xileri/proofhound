@@ -1,0 +1,35 @@
+{
+  "name": "proofhound",
+  "version": "0.1.0",
+  "private": true,
+  "description": "An agent that runs on its own Orbio key: proves creators made their work first and watches for copies.",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "tsx src/server.ts",
+    "dev": "tsx watch src/server.ts",
+    "orbio:login": "tsx src/scripts/orbio-login.ts",
+    "agent:lifecycle": "tsx src/scripts/lifecycle-demo.ts",
+    "agent:run": "tsx src/scripts/agent-run.ts",
+    "chain:setup": "tsx src/scripts/chain-setup.ts",
+    "typecheck": "tsc --noEmit",
+    "deploy:secrets": "tsx src/scripts/deploy-secrets.ts"
+  },
+  "dependencies": {
+    "@hono/node-server": "^2.1.1",
+    "@huggingface/transformers": "^4.3.0",
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "fast-xml-parser": "^5.11.1",
+    "hono": "^4.13.8",
+    "openai": "^7.18.0",
+    "tsx": "^4.23.13",
+    "viem": "^2.56.8",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.1",
+    "typescript": "^7.0.2"
+  }
+}

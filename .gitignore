@@ -1,0 +1,16 @@
+node_modules/
+dist/
+
+# Secrets: env files and the agent's saved Orbio login (OAuth client + tokens)
+.env
+.env.*
+!.env.example
+.orbio/
+
+# Local storage of registered work — never commit real user data
+data/
+
+# Local-only: the server's Orbio login, deployment secrets, editor tooling
+.orbio-server/
+deploy-secrets.env
+.claude/
